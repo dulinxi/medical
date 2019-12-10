@@ -11,9 +11,13 @@
     "url": "git+https://github.com/dulinxi/medical.git"
   },
   "author": "Du Jun <zyuer520@gamil.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dulinxi/medical/issues"
   },
-  "homepage": "https://github.com/dulinxi/medical"
+  "homepage": "https://github.com/dulinxi/medical",
+  "devDependencies": {
+    "d3": "^5.14.2",
+    "webpack": "^4.41.2"
+  }
 }
