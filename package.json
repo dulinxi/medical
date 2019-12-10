@@ -2,7 +2,7 @@
   "name": "medicaljs",
   "version": "1.0.1",
   "description": "A visual medical chart template",
-  "main": "index.js",
+  "main": "/dist/medicaljs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
