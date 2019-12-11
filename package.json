@@ -2,9 +2,9 @@
   "name": "medicaljs",
   "version": "1.0.1",
   "description": "A visual medical chart template",
-  "main": "/dist/medicaljs.js",
+  "main": "/dist/medical.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config build/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dulinxi/medical",
   "devDependencies": {
     "d3": "^5.14.2",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
