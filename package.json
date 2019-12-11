@@ -1,10 +1,11 @@
 {
   "name": "medicaljs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A visual medical chart template",
   "main": "/dist/medical.js",
   "scripts": {
-    "build": "webpack --config build/webpack.config.js"
+    "start:dev": "node_modules/.bin/webpack-dev-server --config build/webpack.config.js",
+    "build": "webpack --mode=production --config build/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,13 @@
   },
   "homepage": "https://github.com/dulinxi/medical",
   "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
     "d3": "^5.14.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
-  }
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {}
 }
