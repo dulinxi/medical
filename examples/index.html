@@ -4,13 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Medical Demos</title>
+    <style>
+      .vlines,
+      .hlines {
+        stroke: rgb(150, 148, 109);
+        shape-rendering: crispEdges;
+        stroke-width: 1px;
+        stroke-opacity: 0.3;
+      }
+      .hlabels line,
+      .vlabels line {
+        stroke: rgb(150, 148, 109);
+        shape-rendering: crispEdges;
+        stroke-width: 1px;
+        stroke-opacity: 0.7;
+      }
+    </style>
   </head>
   <body>
     <div id="medical"></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="../dist/medical.js"></script>
     <script>
       var medical = new Medical();
-      new medical.timeline().show();
+      new medical.timeline({
+        el: '#medical',
+        width: 500,
+        height: 500
+      });
     </script>
   </body>
 </html>
